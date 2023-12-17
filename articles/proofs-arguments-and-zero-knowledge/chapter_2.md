@@ -74,9 +74,9 @@ Reason: Time complexity of multiplication of a (n x n) matrix and a vector of si
 
    Consider matrices:
 
-   $`A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}`$
+   $A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}$
 
-   $`B = \begin{bmatrix} 1 \\ r \\ r ^ 2 \end{bmatrix}`$
+   $B = \begin{bmatrix} 1 \\ r \\ r ^ 2 \end{bmatrix}$
 
    The product $C$ is obtained as follows:
 
@@ -88,7 +88,7 @@ Reason: Time complexity of multiplication of a (n x n) matrix and a vector of si
 
    Resulting in:
 
-   $`C = \begin{bmatrix} 3r^2 + 2r + 1 \\ 6r^2 + 5r + 4 \\ 9r^2 + 8r + 7 \end{bmatrix}`$
+   $C = \begin{bmatrix} 3r^2 + 2r + 1 \\ 6r^2 + 5r + 4 \\ 9r^2 + 8r + 7 \end{bmatrix}$
 
 ## An Alternative View of Fingerprinting and Freivalds’ Algorithm
 
