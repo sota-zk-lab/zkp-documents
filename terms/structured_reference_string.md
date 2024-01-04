@@ -1,0 +1,3 @@
+# Structured Reference String (SRS)
+
+Let $e$ be a bilinear map pairing groups $G, G_t$ of prime order $p$, and $g \in G$ be a generator, and $D$ be an upper bound on the degree of the polynomials we would like to support commitments to. The structured reference string consists of encodings in $G$ of all powers of a random nonzero field element $\tau \in F_p$. That is, $\tau$ is an integer chosen at random from $\{1, . . . , p−1\}$, and the **SRS** equals $(g, g^{\tau} , g^{\tau^2} , ... , g^{\tau^D})$. The value $\tau$ is toxic waste that must be discarded because it can be used to destroy binding.
