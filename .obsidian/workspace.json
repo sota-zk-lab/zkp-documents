@@ -23,26 +23,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "terms/zkp.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df05769dbbafcdb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_19.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md"
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_19.md"
               }
             }
           },
@@ -188,8 +176,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "df05769dbbafcdb0",
+  "active": "c3bb6ac103450aaa",
   "lastOpenFiles": [
+    "articles/proofs-arguments-and-zero-knowledge/chapter_3.md",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+    "terms/multilinear.md",
+    "terms/zkp.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "terms/np.md",
+    "terms/ip.md",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_19.md",
+    "Untitled.md",
+    "terms/structured_reference_string.md",
     "terms/quadratic_field.md",
     "terms/pinocchio.md",
     "terms/knowledge_of_exponent.md",
@@ -206,8 +205,6 @@
     "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood.md",
     "articles/zk-snarks-under-the-hood/attachments",
     "articles/zk-snarks-under-the-hood",
-    "Untitled.md",
-    "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
     "articles/proofs-arguments-and-zero-knowledge/proofs_arguments_and_zero_knowledge.md",
     "presentations/~$zkp_overall.pptx",
     "presentations/part-2/part_2.md",
@@ -227,14 +224,7 @@
     "export/part_2/plugin/menu/README.md",
     "export/part_2/plugin/menu/CONTRIBUTING.md",
     "attachments/Pasted/image/20231220104408.png.md",
-    "terms/zkp.md",
     "terms/trusted_setup.md",
-    "terms/witness.md",
-    "terms/succinct.md",
-    "terms/statement.md",
-    "terms/polynomial_time_computation.md",
-    "terms/interactive.md",
-    "terms/fundamental_theorem_of_algebra.md",
-    "Untitled.canvas"
+    "terms/witness.md"
   ]
 }

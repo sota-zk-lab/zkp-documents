@@ -5,13 +5,28 @@ Level: "6"
 ---
 # Chapter 19: Bird’s Eye View of Practical Arguments
 
-## A Taxonomy of SNARKs
+![](attachments/taxonomy.png)
 
-- 4 approach of practical SNARKs
-	- Interactive proof for arithmetic circuit evaluation (GKR protocol)
-	- MIPs for circuit or R1CS satisfiability
-	- Constant-round polynomial IOP for circuit or R1CS satisfiability
-	- Linear PCP
+## 19.1 A Taxonomy of SNARKs
+
+Outside of the **linear-PCP-based SNARKs**, most known **SNARKs** are obtained by combining some **IP**,  **MIP**, or **constant-round polynomial IOP** with a **polynomial commitment** scheme. 
+For example:
+
+| Polynomial IOP approaches      | Polynomial Commitment Approaches                                                     | SNARK                                            |
+| ------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| IPs                            | FRI-based (multilinear) polynomial commitments                                       | Virgo                                            |
+| IPs                            | Discrete-log-based (multilinear) polynomial commitments (Bulletproofs, Hyrax-commit) | Hyrax                                            |
+| IPs                            | KZG-based (multilinear) polynomial commitments                                       | zk-vSQL and Libra                                |
+| MIPs                           | Multilinear polynomial commitments                                                   | Spartan, Xiphos, Kopis, Brakedown, and Shockwave |
+| Constant-round polynomial IOPs | FRI-based (univariate) polynomial commitments                                        | Aurora, Fractal, and Redshift                    |
+| Constant-round polynomial IOPs | KZG-based (univariate) polynomial commitments                                        | Marlin                                           |
+| Constant-round polynomial IOP  | Ligero                                                                               | Ligero                                           | 
+
+Beside that, the most popular variant of the SNARK derived from GGPR’s linear PCP is
+Groth16.
+
+
+**More SNARKs via composition**: On top of the taxonomy of SNARKs delineated above, one can take any two SNARKs designed via one of the above approaches, and compose them one or more times. Such compositions are growing increasingly popular and already yield state-of-the-art performance.
 
 **Pros and cons of three first approach in section 10.6**.
 
@@ -51,68 +66,70 @@ three broad **approaches** to polynomial commitment schemes
 **pros and cons of the various polynomial commitment schemes in Section 16.3.**
 
 
-![](attachments/taxonomy.png)
+
 
 
 SNARKs via composition
 	As discussed in Section 18.1, by taking a “fast-prover, larger-proof” SNARK and composing it with a “slower prover-smaller proof” SNARK, one can in principle obtain a “best-of-both-worlds” SNARK with a fast prover and small proofs.
 
 
-## Pros and Cons of the Approaches
+## 19.2 Pros and Cons of the Approaches
 
-### Approaches minimizing proof size:
+### Approaches Minimizing Proof Size
+There are 2 approaches that achieve proofs consisting of a constant  
+number of group elements:
+1. Linear PCPs: smallest proof size (3 group elements).
+2. constant-round polynomial IOPs combined with KZG-based polynomial commitments.
+The downsides of these are:
+1. They both require a trusted setup. For [SRS](../../terms/structured_reference_string.md), it is universal and updatable for (2), computation-specific for (1).
+2. Computationally expensive for the prover.
 
-(1) constant-round polynomial IOPs combined with KZG-based polynomial commitments
+**Transparency**: (depend on the polynomial commitment scheme)
 
-(2) linear PCPs: smallest proof size, faster prover time
+All of the remaining approaches are transparent unless they choose to use KZG-based polynomial commitments. They use uniform reference string (URS) rather than a [SRS](../../terms/structured_reference_string.md), and hence no toxic waste is produced.
 
-require a trusted setup
+**Post-quantum security**: 
+The approaches that are plausibly post-quantum secure are comprised of those  
+that utilize an IOP-based polynomial commitment (FRI, Ligero, Brakedown).
 
-[SRS](../../terms/structured_reference_string.md) is universal and updatable for (1), computation-specific for (2)
+The others are not due to their reliance on the hardness of discrete log.
 
-
- Computationally expensive for the prover.
-
-
-
-
-
-
-**Transparency**: (depent on the polynomial commitment scheme)
-	all of the remaining approaches are transparent unless they choose to use KZG-based polynomial commitments.
-	
-	uniform reference string (URS) rather than a structured reference string, and hence no toxic waste is p
-
-**Post-quantum security**: depent on the polynomial commitment scheme)
-		utilize an IOP-based polynomial commitment (FRI, Ligero, Brakedown)
-		 No due to their reliance on the hardness of discrete log
 **Dominant contributor to cost: polynomial commitments**
+Normally, the polynomial commitment dominates the most relevant costs: prover time, proof length, and verifier time when combined with MIPs and constant-round polynomial IOPs.  
 
-(the lone exception is that, if an MIP is combined with KZG commitments, it is the MIP and not the polynomial commitment that dominates verification costs)
-
+There is an exception that, if an MIP is combined with KZG commitments, it is the MIP and not the polynomial commitment that dominates verification costs).
 
 Here is a brief summary of how concrete costs compare. Prover costs:
-1. FRI and Bulletproofs >>
-2. pairings (Dory and KZG commitments). 
-3. ~ Hyrax, Ligero and Brakedown’s commitments
-4.  Brakedown is slightly faster 
-
+1. FRI and Bulletproofs are the most expensive polynomial commitment schemes.
+2. Pairings (Dory and KZG commitments). 
+3. Hyrax, Ligero and Brakedown’s commitments are similar
+4.  Brakedown is slightly faster. 
 
 Commitment size and evaluation proof length:
-1. Brakedown >Ligero > Hyrax  square-root size proofs
-2. FRI  polylogarithmic
-3. Dory > ! Bulletproofs logarithmic size
+1. Brakedown > Ligero > Hyrax: roughly square-root size proofs.
+2. FRI: polylogarithmic proof size.
+3. Dory and Bulletproofs: logarithmic size proofs. 
 4. KZG-commitments for univariate polynomials (constant size).
-
-Recent work called Orion [XZS22] reduces the size of Brakedown’s evaluation proofs via depth-one SNARK composition, but in so doing it relinquishes the field-agnostic nature of Brakedown and the proofs remain large (megabytes). Hyperplonk [CBBZ22] proposes to reduce the proof size much further, to under 10 KBs, by combining Brakedown or Orion with KZG commitments, though this relinquishes transparency in addition to field-agnosticism.
-
 
 **Constant-round IOPs vs. MIPs and IPs.**
 
-**IOPs**  much slower and more space intensive for the prover **MIPs and IPs** 
-
+**Constant-round IOPs**:  much slower and more space intensive for the prover because they require to commit to many polynomials ($\ge 10$), while in **MIPs and IPs**, prover needs to commit only single polynomial.
 
 **On pre-processing and work-saving for the verifier**
+The approaches requiring an [SRS](../../terms/structured_reference_string.md) inherently require a pre-processing phase to  
+generate the SRS and this take time proportional to the size of the circuit.
+
+	“paying for” an expensive pre-processing phase can enable improved verification costs in the online phase of the protocol
+
+
 
 **Prover time in holographic vs. non-holographic SNARKs**
+Non-holographic systems may achieve faster prover time as measured on a per-gate basis, but they may have to use much bigger circuits.
 
+## 19.3 Other Issues Affecting Concrete Efficiency
+
+### 19.3.1 Field Choice
+The designer’s choice of field to work over can be limited:
+1. Many cryptographic applications naturally work over fields that do not satisfy the  
+properties required by many SNARKs.
+2. For certain fields, addition and multiplication are particularly efficient on modern computers.
