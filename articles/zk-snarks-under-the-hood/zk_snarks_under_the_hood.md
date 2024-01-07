@@ -119,19 +119,23 @@ We have two pairs $(G, k)$ and $(\pi_a, \pi_a')$, and the only way I can know th
 
 Check using 3 [pairing](../../terms/elliptic_curve.md#elliptic-curve-pairing) equations:
 
-$e(\pi_a, k_a) = e(\pi_a', G)$
-
-$e(\pi_b, k_b) = e(\pi_b', G)$
-
-$e(\pi_c, k_c) = e(\pi_c', G)$
+$$
+\begin{align}
+e(\pi_a, k_a) &= e(\pi_a', G) \\
+e(\pi_b, k_b) &= e(\pi_b', G) \\
+e(\pi_c, k_c) &= e(\pi_c', G)
+\end{align}
+$$
 
 To prove the correctness of those equations, I am going to prove the first equation:
 
-$e(\pi_a, k_a) = e(\pi_a', G)$
-
-$e(\pi_a * k_a, G) = e(\pi_a', G)$ 
-
-$e(\pi_a', G) = e(\pi_a', G)$
+$$
+\begin{align}
+e(\pi_a, k_a) &= e(\pi_a', G) \\
+e(\pi_a * k_a, G) &= e(\pi_a', G) \\
+e(\pi_a', G) &= e(\pi_a', G)
+\end{align}
+$$
 
 So our equation is correct.
 # Generalize
