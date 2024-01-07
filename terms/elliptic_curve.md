@@ -2,9 +2,13 @@
 
 Explore the fascinating world of Elliptic Curve cryptography through the following resources:
 
-1. [Exploring Elliptic Curve Pairings](https://medium.com/@VitalikButerin/exploring-elliptic-curve-pairings-c73c1864e627) by Vitalik Buterin
-2. [A relatively easy to understand primer on elliptic curve cryptography](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) from Cloudflare's blog
-3. [Cryptography Algorithms](https://www.amazon.com/Next-generation-Cryptography-Algorithms-Explained-implementation/dp/1789617138/ref=sr_1_3?crid=2XXJF5O1P384O&keywords=Cryptography+Algorithms&qid=1702790040&sprefix=cryptography+algorithms%2Caps%2C330&sr=8-3) -
+1. [**Exploring Elliptic Curve Pairings
+   **](https://medium.com/@VitalikButerin/exploring-elliptic-curve-pairings-c73c1864e627) by Vitalik Buterin
+2. [**A relatively easy to understand primer on elliptic curve cryptography
+   **](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) from
+   Cloudflare's blog
+3. [**Cryptography Algorithms
+   **](https://www.amazon.com/Next-generation-Cryptography-Algorithms-Explained-implementation/dp/1789617138/ref=sr_1_3?crid=2XXJF5O1P384O&keywords=Cryptography+Algorithms&qid=1702790040&sprefix=cryptography+algorithms%2Caps%2C330&sr=8-3) -
    A comprehensive book on cryptography algorithms
 
 <!-- TOC -->
