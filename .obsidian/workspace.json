@@ -35,10 +35,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood_1.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "8b7c3fe58985e5d8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -108,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md"
+                "file": "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood_1.md"
               }
             }
           },
@@ -190,51 +198,52 @@
   },
   "active": "df05769dbbafcdb0",
   "lastOpenFiles": [
-    "terms/quadratic_field.md",
-    "terms/pinocchio.md",
-    "terms/knowledge_of_exponent.md",
-    "terms/fermat_little_theorem.md",
+    "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood.md",
+    "terms/discrete_logarithm.md",
+    "terms/polynomial-commitment/100_kate_commitment.md",
+    "terms/polynomial-commitment/000_polynomial_commitment.md",
+    "terms/attachments/elliptic_addition.png",
+    "terms/arguments.md",
     "terms/elliptic_curve.md",
+    "terms/elliptic_curve_pairings.md",
+    "terms/fermat_little_theorem.md",
+    "terms/fundamental_theorem_of_algebra.md",
+    "terms/fiat_shamir.md",
+    "terms/homogeneous_polynomial_or_projective_model.md",
+    "terms/interactive.md",
+    "terms/knowledge_of_exponent.md",
+    "terms/pairings_or_bilinear_map.md",
+    "terms/pinocchio.md",
+    "terms/polynomial_time_computation.md",
+    "terms/succinct.md",
+    "terms/trusted_setup.md",
+    "terms/statement.md",
+    "terms/quadratic_field.md",
+    "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood_1.md",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/proofs_args_and_zk.pdf",
+    "terms/zkp.md",
+    "articles/zk-snarks-under-the-hood/attachments/verification_steps.png",
+    "articles/zk-snarks-under-the-hood/attachments/Untitled.png",
+    "articles/zk-snarks-under-the-hood/attachments",
+    "articles/zk-snarks-under-the-hood/New folder",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
     "terms/bilinear_map.md",
     "terms/attachments/image02.gif",
     "terms/attachments/elliptic_vertical.png",
     "terms/attachments/elliptic_curve.png",
-    "terms/attachments/elliptic_addition.png",
     "terms/attachments",
     "articles/zk-snarks-under-the-hood/attachments/Pasted image 20231218234644.png",
     "articles/zk-snarks-under-the-hood/attachments/Pasted image 20231218154719.png",
-    "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood.md",
-    "articles/zk-snarks-under-the-hood/attachments",
     "articles/zk-snarks-under-the-hood",
     "Untitled.md",
-    "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
     "articles/proofs-arguments-and-zero-knowledge/proofs_arguments_and_zero_knowledge.md",
     "presentations/~$zkp_overall.pptx",
-    "presentations/part-2/part_2.md",
     "presentations/~$zkp_overall_2.pptx",
     "presentations/~$zkp_overall 1.pptx",
     "presentations/zkp_overall_2.pptx",
     "presentations/part-2/steps.png",
     "presentations/part-2/step_4.png",
-    "presentations/part-2/overall.png",
     "presentations/part-2/attachments",
-    "presentations/~$Presentation1.pptx",
-    "presentations/part-2",
-    "export/part_2/plugin/chalkboard/README.md",
-    "export/part_2/plugin/chalkboard/img/blackboard.png",
-    "export/part_2/plugin/chart/README.md",
-    "export/part_2/plugin/customcontrols/README.md",
-    "export/part_2/plugin/menu/README.md",
-    "export/part_2/plugin/menu/CONTRIBUTING.md",
-    "attachments/Pasted/image/20231220104408.png.md",
-    "terms/zkp.md",
-    "terms/trusted_setup.md",
-    "terms/witness.md",
-    "terms/succinct.md",
-    "terms/statement.md",
-    "terms/polynomial_time_computation.md",
-    "terms/interactive.md",
-    "terms/fundamental_theorem_of_algebra.md",
     "Untitled.canvas"
   ]
 }
