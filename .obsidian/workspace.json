@@ -11,9 +11,11 @@
             "id": "b011539a74cb1468",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/attachments/proofs_args_and_zk.pdf"
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -23,19 +25,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "terms/zkp.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_3.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "df05769dbbafcdb0",
+            "id": "aabaf84701f2a6a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eaf088a63f44652d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "terms/arguments.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_2.md"
+                "file": "articles/proofs-arguments-and-zero-knowledge/chapter_4.md"
               }
             }
           },
@@ -188,8 +202,38 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "df05769dbbafcdb0",
+  "active": "aabaf84701f2a6a1",
   "lastOpenFiles": [
+    "articles/proofs-arguments-and-zero-knowledge/attachments/compute_tildeW.png",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/gkr_circuit.png",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/reduce_verifying.png",
+    "terms/schwartz_zippel_lemma.md",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_4.md",
+    "terms/vsbw13.md",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_3.md",
+    "terms/uniqueness_of_multilinear_extension.md",
+    "terms/zkp.md",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
+    "terms/multilinear.md",
+    "terms/extension.md",
+    "terms/arguments.md",
+    "terms/adleman_theorem.md",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/2_polynomials.png",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/LDE.png",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/cost_of_SAT.png",
+    "terms/boolean_circuit.md",
+    "terms/boolean_formula.md",
+    "terms/attachments/boolean_circuit.png",
+    "terms/attachments/boolean_formula.png",
+    "index.md",
+    "articles/proofs-arguments-and-zero-knowledge/attachments/proofs_args_and_zk.pdf",
+    "articles/proofs-arguments-and-zero-knowledge/chapter_19.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "terms/np.md",
+    "terms/ip.md",
+    "Untitled.md",
+    "terms/structured_reference_string.md",
     "terms/quadratic_field.md",
     "terms/pinocchio.md",
     "terms/knowledge_of_exponent.md",
@@ -199,42 +243,14 @@
     "terms/attachments/image02.gif",
     "terms/attachments/elliptic_vertical.png",
     "terms/attachments/elliptic_curve.png",
-    "terms/attachments/elliptic_addition.png",
     "terms/attachments",
-    "articles/zk-snarks-under-the-hood/attachments/Pasted image 20231218234644.png",
-    "articles/zk-snarks-under-the-hood/attachments/Pasted image 20231218154719.png",
-    "articles/zk-snarks-under-the-hood/zk_snarks_under_the_hood.md",
     "articles/zk-snarks-under-the-hood/attachments",
     "articles/zk-snarks-under-the-hood",
-    "Untitled.md",
-    "articles/proofs-arguments-and-zero-knowledge/chapter_2.md",
-    "articles/proofs-arguments-and-zero-knowledge/proofs_arguments_and_zero_knowledge.md",
     "presentations/~$zkp_overall.pptx",
-    "presentations/part-2/part_2.md",
     "presentations/~$zkp_overall_2.pptx",
     "presentations/~$zkp_overall 1.pptx",
     "presentations/zkp_overall_2.pptx",
-    "presentations/part-2/steps.png",
-    "presentations/part-2/step_4.png",
-    "presentations/part-2/overall.png",
     "presentations/part-2/attachments",
-    "presentations/~$Presentation1.pptx",
-    "presentations/part-2",
-    "export/part_2/plugin/chalkboard/README.md",
-    "export/part_2/plugin/chalkboard/img/blackboard.png",
-    "export/part_2/plugin/chart/README.md",
-    "export/part_2/plugin/customcontrols/README.md",
-    "export/part_2/plugin/menu/README.md",
-    "export/part_2/plugin/menu/CONTRIBUTING.md",
-    "attachments/Pasted/image/20231220104408.png.md",
-    "terms/zkp.md",
-    "terms/trusted_setup.md",
-    "terms/witness.md",
-    "terms/succinct.md",
-    "terms/statement.md",
-    "terms/polynomial_time_computation.md",
-    "terms/interactive.md",
-    "terms/fundamental_theorem_of_algebra.md",
-    "Untitled.canvas"
+    "presentations/~$Presentation1.pptx"
   ]
 }
