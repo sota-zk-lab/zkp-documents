@@ -1,5 +1,10 @@
 # **Uniqueness of Multilinear Extension**
 
+> [!NOTE]  
+> Any function $f: \{0, 1\}^v → F$ has a unique [multilinear](multilinear.md) [extension](extension) (MLE) over $F$.
+
+## Proof
+
 To show that there is a unique MLE $f$. We show that if there are two multilinear polynomials over $F$: $p(x)$ = $q(x)$
 for all $x \in F^v$, then $p$ and $q$ are in fact the same polynomial. Equivalently, we want to show that the polynomial
 $h = p - q$ is identically 0.
