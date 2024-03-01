@@ -32,6 +32,7 @@ The equation defining an elliptic curve is $y^{2} = x^{3} + ax + b$.
 > [!WARNING]  
 > An elliptic curve is not an ellipse.
 
+You should also read about [elliptic curve group](elliptic_curve_group.md).
 ## Terminology
 
 ### Point of Infinity
