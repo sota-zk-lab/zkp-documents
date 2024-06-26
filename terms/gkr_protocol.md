@@ -95,9 +95,9 @@ $$
 **Example**: Compute $\tilde W$ in a circuit over $F_5$ consisting entirely of multiplication gates
 ![compute_w](attachments/compute_tilde_w.png)
 
-### 4 Discussion of Costs and Soundness
+## 4 Discussion of Costs and Soundness
 
-#### V's runtime
+### V's runtime
 
 - The total communication cost is $O(S_0 + dlogS)$, where $S_0$ is the number of outputs.
 - The time cost to $V$ is $O(n + dlogS + t + S_0)$, where:
@@ -106,20 +106,20 @@ $$
   - $S_0$ is the time required to read the vector of claimed outputs and evaluate the corresponding **MLE**.
   - $dlogS$ is the time required for $V$ to send messages to $P$ and process and check the messages from $P$.
 
-#### P's runtime
+### P's runtime
 
 - $O(S^3)$.
 - Can be improved by using [Lagrange Interpolation](../../terms/lagrange_interpolation.md).
 
-#### Round complexity and communication cost
+### Round complexity and communication cost
 
 - $O(dlogS)$ rounds.
 
-#### Soundness error
+### Soundness error
 
 - The soundness error is: $O(dlog(S)/|F|)$.
 
-### 5 Evaluating $\tilde {add}_i$ and $\tilde {mult}_i$ Efficiently
+## 5 Evaluating $\tilde {add}_i$ and $\tilde {mult}_i$ Efficiently
 
 The issue of the verifier efficiently evaluating $\tilde {add} _ i$ and $\tilde {mult} _ i$ at a random
 point $\omega \in F^{k _ i+2k _ {i+1}}$ is a tricky one.

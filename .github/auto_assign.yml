@@ -7,15 +7,13 @@ addAssignees: true
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
   - Draply
-  - haipro287
+  - 0x5ea000000
   - hduoc2003
-  - khoikhtn
   - ktokto313
-  - sonntuet1997
+  - zk-steve
   - thuan2172001
   - Tranduy1dol
   - VanhGer
-  - bjergsen243
 
 # A list of keywords to be skipped the process that add reviewers if pull requests include it
 skipKeywords:
